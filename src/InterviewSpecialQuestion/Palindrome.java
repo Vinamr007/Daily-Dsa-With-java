@@ -2,20 +2,20 @@ package InterviewSpecialQuestion;
 
 public class Palindrome {
     public static void main(String[] args) {
-        int v=12321;
-        int v1=0;
+        int num = 121;
+        int original = num;
+        int rev = 0;
 
-        while(v>0){
-            int digit=v%10;
-            v1=v1*10+digit;
-        v=v/10;
+        while (num != 0) {
+            int digit = num % 10;
+            rev = rev * 10 + digit;
+            num = num / 10;
+        }
 
-        }
-        if(v1==v){
-            System.out.println("palindrome");
-        }
-        else{
-            System.out.println("not a palindrome");
+        if (original == rev) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
         }
    }
 }
