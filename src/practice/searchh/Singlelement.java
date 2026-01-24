@@ -1,4 +1,4 @@
-package practice;
+package practice.searchh;
 
 public class Singlelement {
     public static void main(String[] args) {
