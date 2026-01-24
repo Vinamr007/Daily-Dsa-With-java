@@ -1,4 +1,4 @@
-package practice;
+package practice.Array;
 
 public class duplicatenumber {
     public static void main(String[] args) {

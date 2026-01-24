@@ -1,4 +1,4 @@
-package practice;
+package practice.Array;
 
 public class peakindexinunsortedarray {
     public static int findPeakElement(int[] nums) {

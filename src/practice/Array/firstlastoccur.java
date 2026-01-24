@@ -1,4 +1,4 @@
-package practice;
+package practice.Array;
 
 public class firstlastoccur {
     public static void firstLastOccurance(int[] arr,int target){

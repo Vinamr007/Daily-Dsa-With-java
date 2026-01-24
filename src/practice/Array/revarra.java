@@ -1,4 +1,4 @@
-package practice;
+package practice.Array;
 
 public class revarra {
     public static void main(String[] args) {

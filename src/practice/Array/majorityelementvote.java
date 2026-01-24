@@ -1,4 +1,4 @@
-package practice;
+package practice.Array;
 
 public class majorityelementvote {
     public static void main(String[] args) {
