@@ -19,13 +19,6 @@ public class firstlastelememnttt {
                 break;
             }
         }
-
-
-
-
-
-
-
 //        //first occurence
 //        int first=-1;
 //        int start=0;
