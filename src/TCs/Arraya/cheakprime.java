@@ -1,4 +1,4 @@
-package TCs;
+package TCs.Arraya;
 
 import java.util.Scanner;
 

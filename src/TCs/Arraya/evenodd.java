@@ -1,4 +1,4 @@
-package TCs;
+package TCs.Arraya;
 
 public class evenodd {
     public static void main(String[] args) {
