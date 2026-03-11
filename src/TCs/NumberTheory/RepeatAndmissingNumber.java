@@ -2,7 +2,7 @@ package TCs.NumberTheory;
 
 public class RepeatAndmissingNumber {
     public static void main(String[] args) {
-        int[] arr={4,5,6,2,1,1};
+        int[] arr={2,2};
         int n=arr.length;
         int sum=0;
         for(int i=0;i<n;i++)
