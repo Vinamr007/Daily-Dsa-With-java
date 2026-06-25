@@ -1,4 +1,4 @@
-package DSA_BOOTCAMP;
+package DSA_BOOTCAMP.day1;
 
 import java.util.Scanner;
 
