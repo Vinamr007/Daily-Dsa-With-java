@@ -9,8 +9,9 @@ public class twosum {
                 if(a[i]+a[j]==target){
                     System.out.println("Pair found at index: "+i+" and "+j);
                 }
-                break;
+               // break;
             }
+       break;
         }
 
     }
