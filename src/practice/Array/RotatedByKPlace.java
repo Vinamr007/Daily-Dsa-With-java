@@ -17,7 +17,9 @@ public class RotatedByKPlace {
         reverse(nums,0, nums.length-1);
         reverse(nums,k-1,0);
         reverse(nums,k+1,nums.length-1);
-
+for(int i=0;i<nums.length;i++){
+    System.out.print(nums[i]);
+}
     }
 
     public static void main(String[] args) {
@@ -26,5 +28,6 @@ public class RotatedByKPlace {
         int k=sc.nextInt();
         int[] nums={1,2,3,4,5,6,7};
         krotate(nums,k);
+
     }
 }
