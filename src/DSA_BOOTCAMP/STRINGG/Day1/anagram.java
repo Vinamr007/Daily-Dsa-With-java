@@ -1,4 +1,4 @@
-package DSA_BOOTCAMP.STRINGG;
+package DSA_BOOTCAMP.STRINGG.Day1;
 
 import java.util.Arrays;
 

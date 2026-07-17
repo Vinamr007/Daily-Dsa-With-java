@@ -1,4 +1,4 @@
-package DSA_BOOTCAMP.STRINGG;
+package DSA_BOOTCAMP.STRINGG.Day1;
 
 public class nonrepeatig {
     public static void main(String[] args) {
