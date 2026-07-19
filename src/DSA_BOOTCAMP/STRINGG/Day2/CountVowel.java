@@ -2,12 +2,30 @@ package DSA_BOOTCAMP.STRINGG.Day2;
 
 public class CountVowel {
     public static void main(String[] args) {
-        String str="Vinamr";
+        String str = "banana";
 
-        for(int i=0;i<str.length();i++){
-            if(str.charAt(i)=='a' || str.charAt(i)=='e' || str.charAt(i)=='i' || str.charAt(i)=='o' || str.charAt(i)=='u' || str.charAt(i)=='A' || str.charAt(i)=='E' || str.charAt(i)=='O' || str.charAt(i)=='U' ){
-                System.out.println(str.charAt(i));
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            boolean alreadyChecked = false;
+            // Check if this character appeared before
+            for (int j = 0; j < i; j++) {
+                if (ch == str.charAt(j)) {
+                    alreadyChecked = true;
+                    break;
+                }
             }
+            // Skip if already counted
+            if (alreadyChecked) {
+                continue;
+            }
+            // Count frequency
+            int count = 0;
+            for (int j = 0; j < str.length(); j++) {
+                if (ch == str.charAt(j)) {
+                    count++;
+                }
+            }
+            System.out.println(ch + " = " + count);
         }
     }
 }
