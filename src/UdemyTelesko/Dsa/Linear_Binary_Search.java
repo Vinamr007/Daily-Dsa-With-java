@@ -1,8 +1,6 @@
 package UdemyTelesko.Dsa;
 
-import Searching.BinarySearch;
-
-public class Demo {
+public class Linear_Binary_Search {
     public static void main(String[] args) {
         int[] nums = {5, 7, 9, 11,13,15 };
 int target=11;
