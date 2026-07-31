@@ -10,6 +10,7 @@ public class Array_avgsum {
             int avg=0;
             int sum=0;
             for (int j=i;j<i+3;j++){
+
                 sum+=a[j];
             }
             avg= (sum/3);
