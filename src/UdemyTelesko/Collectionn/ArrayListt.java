@@ -23,9 +23,9 @@ public class ArrayListt {
         l.add(4);
         l.add(5);
 
-        System.out.println(l.getFirst());
-        System.out.println(l.getLast());
-
+        System.out.println("first index: "+l.getFirst());
+        System.out.println("last index: "+l.getLast());
+        System.out.println("value: "+l);
 
     }
 }
