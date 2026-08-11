@@ -30,3 +30,4 @@ public class FrequencyOfElement {
             System.out.println(a[i] + " -> " + count);
         }
     }
+}
