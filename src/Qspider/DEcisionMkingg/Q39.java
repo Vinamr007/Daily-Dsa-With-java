@@ -1,4 +1,4 @@
-package Qspider;
+package Qspider.DEcisionMkingg;
 
 import java.util.Scanner;
 

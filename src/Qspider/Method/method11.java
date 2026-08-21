@@ -1,94 +1,102 @@
 package Qspider.Method;
 
 public class method11 {
+  static  int num=1234;
+  static  int num1=1234;
 
-static int reverse(int num){
-    int rev=0;
 
-    while(num>0){
-        int digit=num%10;
-        rev=rev*10+digit;
-        num=num/10;
-    }
-  return rev;
-}
-    public static int sumofdigit(int num){
 
-        int sum=0;
+//    public static void reverse(){
+//
+//        int rev=0;
+//        for(int i=num1;i>0;i=i/10){
+//            int rem=i%10;
+//            rev=rev*10+rem;
+//        }
+//        System.out.println("reverse "+rev);
+//    }
+//    public static void sumofdigit(){
+//        int sum=0;
+//        while(num>0){
+//            int digit=num%10;
+//            sum=sum+digit;
+//            num/=10;
+//        }
+//        System.out.println("sum of digit "+sum);
+//    }
+//public static void sumOfproduct(){
+//        int product=1;
+//        while(num>0){
+//            int digit=num%10;
+//            product*=digit;
+//            num/=10;
+//        }
+//    System.out.println("sum of product "+product);
+//}
 
-        while(num>0){
-            int rem=num%10;
-            sum+=rem;
-           num=num/10;
+    public static void  IsPalindrome(){
+        int nu =num;
+        boolean flag= false;
+        int rev=0;
+        for(int i=num1;i>0;i=i/10){
+            int rem=i%10;
+            rev=rev*10+rem;
         }
-        return sum;
-
-    }
-public static int SumOfProduct(int num){
-        int product=1;
-        while(num>0){
-            int rem=num%10;
-            product*=rem;
-            num=num/10;
+        if(rev==nu){
+            flag=true;
+            System.out.println("number is palindrome");
+        }else{
+            System.out.println("number is not palindrome");
         }
-        return num;
-
-}
-public static boolean palindromee(int num){
-    int rev=0;
-    boolean ispalindrome=false;
-int num1=num;
-    while(num>0){
-        int digit=num%10;
-        rev=rev*10+digit;
-        num=num/10;
     }
-    if(rev==num1){
-ispalindrome=true;
-        System.out.println("palindrome");
+    public static void isevenOdd(){
+        if(num%2==0){
+            System.out.println("number is even");
+        }else{
+            System.out.println("number is not even");
+        }
     }
-    return ispalindrome;
-}
-
-public static String IsEvenOdd(int num){
-    String op="";
-    if(num%2==0){
-        op="even";
-    }else{
-        op="odd";
-
-//        System.out.println(op);
-    }
-    return op;
-}
-
-public static String binary(int num){
-    String op="";
-    int i=num;
-
-    while(i>0){
-        int rem=i%2;
-
-
-    }
-}
 
     public static void main(String[] args) {
-        int num=1234;
-        int result = sumofdigit(num);
-        System.out.println(result+"sum of digit");
 
-        int sum=SumOfProduct(num);
-        System.out.println(sum+"sum of product");
+// sumofdigit();
+//reverse();
+//sumOfproduct();
+// IsPalindrome();
 
-        int result3 = reverse(num);
-        System.out.println(result3+" reverse");
+//isevenOdd();
 
-        boolean palindrome=palindromee(num);
-        System.out.println(palindrome);
-
-        String result1=IsEvenOdd(num);
-        System.out.println(result1+"isEvenOdd");
 
     }
+
+
+
+//    public static boolean palindromee(int num){
+//        int rev=0;
+//        boolean ispalindrome=false;
+//        int num1=num;
+//        while(num>0){
+//            int digit=num%10;
+//            rev=rev*10+digit;
+//            num=num/10;
+//        }
+//        if(rev==num1){
+//            ispalindrome=true;
+//            System.out.println("palindrome");
+//        }
+//        return ispalindrome;
+//    }
+//
+//    public static String IsEvenOdd(int num){
+//        String op="";
+//        if(num%2==0){
+//            op="even";
+//        }else{
+//            op="odd";
+//
+////        System.out.println(op);
+//        }
+//        return op;
+//    }
+
 }
