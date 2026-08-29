@@ -4,7 +4,6 @@ public class ReverseArray {
     public static void reverse(int[] a){
         int st=0;
         int end=a.length-1;
-
         while(st<end){
             int temp=a[st];
             a[st]=a[end];
