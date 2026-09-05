@@ -2,7 +2,7 @@ package DSA_BOOTCAMP.Collection.Hashmap.Hashset;
 
 import java.util.HashSet;
 
-import static java.lang.StringUTF16.charAt;
+
 
 public class TwoStringg {
     public static void main(String[] args) {
