@@ -608,23 +608,7 @@ If the class has a parent class, the parent constructor is executed as part of t
 
 ````
 
-### ⭐ Constructors topic complete
-
-Your progress is now:
-
-```text
-1. OOP                         ✅ DONE
-2. Constructors               ✅ DONE
-3. Access Modifiers           ← NEXT
-4. static
-5. final
-6. this and super
-7. String
-8. String Pool
-9. Wrapper Classes
-10. Autoboxing and Unboxing
-11. Exception Handling
-12. Collections
+#
 ...
 ````
 

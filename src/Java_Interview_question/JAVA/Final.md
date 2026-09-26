@@ -521,33 +521,5 @@ Here:
 
 ````
 
-### Progress
 
-```text
-1. OOP                         ✅ DONE
-2. Constructors               ✅ DONE
-3. Access Modifiers           ✅ DONE
-4. static                     ✅ DONE
-5. final                      ✅ DONE
-6. this and super             ← NEXT
-7. String
-8. String Pool
-9. Wrapper Classes
-10. Autoboxing and Unboxing
-11. Exception Handling
-12. Collections
-13. ArrayList
-14. LinkedList
-15. HashSet
-16. TreeSet
-17. HashMap
-18. TreeMap
-19. Comparable and Comparator
-20. Java 8 Features
-21. Lambda Expressions
-22. Functional Interfaces
-23. Stream API
-24. Multithreading
-25. Garbage Collection
-26. JVM Internals
 ````
