@@ -994,3 +994,461 @@ Explanation:
 25. Garbage Collection
 26. JVM Internals
 ````
+# String Pool — Java Interview Questions & Answers
+
+## 1. What is String Pool in Java?
+
+String Pool is a special area in the JVM heap where String literals are stored.
+
+The JVM reuses the same String object when the same literal already exists in the pool.
+
+Example:
+
+String s1 = "Java";
+String s2 = "Java";
+
+Both `s1` and `s2` refer to the same pooled String object.
+
+---
+
+## 2. Why does Java use String Pool?
+
+String Pool is used mainly to save memory and avoid creating duplicate String objects.
+
+Example:
+
+String s1 = "Java";
+String s2 = "Java";
+String s3 = "Java";
+
+Instead of creating three separate objects, Java can use one pooled `"Java"` object and let all three references point to it.
+
+---
+
+## 3. Where is the String Pool located?
+
+The String Pool is maintained within the JVM heap.
+
+It is not a separate memory area outside the heap.
+
+---
+
+## 4. What happens when we create a String using a literal?
+
+Example:
+
+String s1 = "Java";
+
+The JVM checks the String Pool.
+
+### If `"Java"` already exists:
+
+The existing pooled object is reused.
+
+### If `"Java"` does not exist:
+
+A new pooled String object is created.
+
+---
+
+## 5. What happens when we create two identical String literals?
+
+Example:
+
+String s1 = "Java";
+String s2 = "Java";
+
+Both references point to the same pooled object.
+
+Therefore:
+
+System.out.println(s1 == s2);
+
+Output:
+
+true
+
+---
+
+## 6. Why does `==` return true for String literals?
+
+Because `==` compares references.
+
+Example:
+
+String s1 = "Java";
+String s2 = "Java";
+
+Since both references point to the same pooled object:
+
+s1 == s2
+
+returns:
+
+true
+
+---
+
+## 7. What happens when we use `new String()`?
+
+Example:
+
+String s1 = new String("Java");
+
+The `new` keyword explicitly creates a new String object.
+
+The literal `"Java"` may also exist in the String Pool, but `s1` refers to the newly created object.
+
+---
+
+## 8. What is the output?
+
+String s1 = "Java";
+String s2 = new String("Java");
+
+System.out.println(s1 == s2);
+
+Output:
+
+false
+
+Reason:
+
+`s1` refers to the pooled object.
+
+`s2` refers to a different String object created using `new`.
+
+---
+
+## 9. What is the output?
+
+String s1 = "Java";
+String s2 = new String("Java");
+
+System.out.println(s1.equals(s2));
+
+Output:
+
+true
+
+Reason:
+
+`equals()` compares String content, and both Strings contain `"Java"`.
+
+---
+
+## 10. What is the difference between String literal and `new String()`?
+
+### String literal
+
+String s = "Java";
+
+The JVM uses the String Pool.
+
+### `new String()`
+
+String s = new String("Java");
+
+A new String object is explicitly created.
+
+---
+
+## 11. What happens in this example?
+
+String s1 = "Java";
+String s2 = "Java";
+
+The JVM creates one pooled `"Java"` object.
+
+Both references point to it.
+
+Conceptually:
+
+s1 ──┐
+├──> "Java" (String Pool)
+s2 ──┘
+
+---
+
+## 12. What happens in this example?
+
+String s1 = new String("Java");
+String s2 = new String("Java");
+
+Two different String objects are created.
+
+Conceptually:
+
+s1 ──> "Java" (Object 1)
+
+s2 ──> "Java" (Object 2)
+
+Therefore:
+
+s1 == s2
+
+is false.
+
+---
+
+## 13. What is `intern()` in Java?
+
+`intern()` returns the canonical representation of a String from the String Pool.
+
+Example:
+
+String s1 = new String("Java");
+
+String s2 = s1.intern();
+
+String s3 = "Java";
+
+System.out.println(s2 == s3);
+
+Output:
+
+true
+
+---
+
+## 14. Why does `intern()` return true in this example?
+
+String s1 = new String("Java");
+
+String s2 = s1.intern();
+
+String s3 = "Java";
+
+`s1` refers to a separately created String object.
+
+`s1.intern()` returns the pooled `"Java"` object.
+
+`s3` also refers to the pooled `"Java"` object.
+
+Therefore:
+
+s2 == s3
+
+returns:
+
+true.
+
+---
+
+## 15. What is the output?
+
+String s1 = "Hello";
+String s2 = "Hello";
+String s3 = new String("Hello");
+
+System.out.println(s1 == s2);
+System.out.println(s1 == s3);
+System.out.println(s1.equals(s3));
+
+Output:
+
+true
+false
+true
+
+---
+
+## 16. What happens when we concatenate String literals?
+
+Example:
+
+String s1 = "Java";
+String s2 = "Spring";
+
+String s3 = "Java" + "Spring";
+
+The compiler can evaluate constant String expressions at compile time.
+
+So `s3` can refer to the pooled `"JavaSpring"` String.
+
+---
+
+## 17. What happens when concatenation uses variables?
+
+Example:
+
+String s1 = "Java";
+String s2 = "Spring";
+
+String s3 = s1 + s2;
+
+The concatenation is performed at runtime.
+
+The resulting String is not automatically the same pooled object as the literal `"JavaSpring"`.
+
+Example:
+
+String s4 = "JavaSpring";
+
+System.out.println(s3 == s4);
+
+Do not assume this will be true.
+
+If you need the pooled representation, use:
+
+String s5 = s3.intern();
+
+---
+
+## 18. What is the output?
+
+String s1 = "Java";
+String s2 = "Java";
+
+System.out.println(s1 == s2);
+
+Output:
+
+true
+
+Both references point to the same String Pool object.
+
+---
+
+## 19. What is the output?
+
+String s1 = new String("Java");
+String s2 = new String("Java");
+
+System.out.println(s1 == s2);
+
+Output:
+
+false
+
+Because two separate String objects are created.
+
+---
+
+## 20. What is the output?
+
+String s1 = "Java";
+String s2 = new String("Java");
+
+String s3 = s2.intern();
+
+System.out.println(s1 == s3);
+
+Output:
+
+true
+
+Both `s1` and `s3` refer to the pooled `"Java"` object.
+
+---
+
+## 21. Is String Pool part of Stack memory?
+
+No.
+
+String objects are stored in the heap, and String literals are maintained in the String Pool within the heap.
+
+The reference variable itself can be stored in the stack when it is a local variable.
+
+Example:
+
+String s = "Java";
+
+Conceptually:
+
+Stack:
+s ─────────┐
+↓
+Heap / String Pool:
+"Java"
+
+---
+
+## 22. Does String Pool contain only String literals?
+
+No.
+
+Strings can be added to the pool using the `intern()` method as well.
+
+Example:
+
+String s = new String("Java");
+
+String pooled = s.intern();
+
+Now `pooled` refers to the canonical pooled String.
+
+---
+
+## 23. Why are Strings suitable for String Pool?
+
+String is immutable.
+
+Because a pooled String cannot be modified, multiple references can safely share the same String object.
+
+Example:
+
+String s1 = "Java";
+String s2 = "Java";
+
+If Strings were mutable, changing `s1` could unexpectedly affect `s2`.
+
+Because Strings are immutable, this problem does not occur.
+
+---
+
+## 24. Is String Pool the same as String object?
+
+No.
+
+The String Pool is an area used to store/reuse String objects for canonical String values.
+
+A String object can also be created outside the pool using `new String()`.
+
+---
+
+## 25. What is the main advantage of String Pool?
+
+The main advantage is memory optimization through reuse of identical String literals.
+
+Example:
+
+String s1 = "Java";
+String s2 = "Java";
+String s3 = "Java";
+
+The same pooled String object can be shared by all three references.
+
+---
+
+# Important Interview Example
+
+Consider:
+
+String s1 = "Java";
+String s2 = "Java";
+String s3 = new String("Java");
+String s4 = new String("Java");
+
+System.out.println(s1 == s2);
+System.out.println(s1 == s3);
+System.out.println(s3 == s4);
+System.out.println(s1.equals(s3));
+
+Output:
+
+true
+false
+false
+true
+
+### Explanation:
+
+```text
+s1 ──┐
+     ├──> "Java" → String Pool
+s2 ──┘
+
+s3 ───> "Java" → separate object
+
+s4 ───> "Java" → separate object
