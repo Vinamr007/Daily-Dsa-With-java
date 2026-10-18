@@ -1,4 +1,4 @@
-package Java_Interview_question.KanakaInterview;
+package Java_Interview_question.Interview;
 
 public class FabiconnionSeries {
     public static void main(String[] args) {
