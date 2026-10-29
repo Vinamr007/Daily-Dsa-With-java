@@ -1,6 +1,6 @@
 package Company_interview.Definedge;
 
-public class firstrepepatingchracter {
+public class firstrepeatingNumber {
     public static void main(String[] args) {
         int[] a={1,2,54,6,4,89,1,8,5};
         boolean isnotrepeated=false;
