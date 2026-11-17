@@ -1,0 +1,375 @@
+Java fundamentals and OOP
+- [x] What is Java? Explain its features.
+- [ ] Explain JDK, JRE and JVM.
+- [ ] How does Java code execute internally?
+- [ ] Why is Java platform-independent?
+- [ ] What is bytecode?
+- [ ] Why is Java not purely object-oriented?
+- [ ] Is Java pass-by-value or pass-by-reference?
+- [ ] What are primitive and non-primitive data types?
+- [ ] Explain the four pillars of OOP.
+- [ ] What is encapsulation?
+- [ ] What is inheritance?
+- [ ] Why doesn't Java support multiple inheritance through classes?
+- [ ] What is polymorphism?
+- [ ] Overloading vs overriding?
+- [ ] Abstract class vs interface?
+- [ ] What is dynamic method dispatch?
+- [ ] Association vs aggregation vs composition?
+- [ ] What is loose coupling?
+Strings, keywords and collections
+- [ ] Why is String immutable?
+- [ ] What is String Pool?
+- [ ] String vs StringBuilder vs StringBuffer?
+- [ ] == vs equals()?
+- [ ] What is the equals() and hashCode() contract?
+- [ ] What is the static keyword?
+- [ ] What is the final keyword?
+- [ ] What is constructor chaining?
+- [ ] What is the Collections Framework?
+- [ ] ArrayList vs LinkedList?
+- [ ] HashSet vs TreeSet?
+- [ ] HashMap vs Hashtable?
+- [ ] How does HashMap work internally?
+- [ ] How does HashMap handle collisions?
+- [ ] What happens when two keys have the same hash code?
+- [ ] HashMap vs ConcurrentHashMap?
+- [ ] Comparable vs Comparator?
+- [ ] Fail-fast vs fail-safe iterators?
+Exceptions, Java 8, multithreading and JVM
+- [ ] Checked vs unchecked exceptions?
+- [ ] Exception vs Error?
+- [ ] throw vs throws?
+- [ ] Can finally fail to execute?
+- [ ] What are custom exceptions?
+- [ ] What is a functional interface?
+- [ ] What is a lambda expression?
+- [ ] Explain Predicate, Function, Consumer and Supplier.
+- [ ] What is Stream API?
+- [ ] map() vs flatMap()?
+- [ ] Intermediate vs terminal operations?
+- [ ] What is Optional?
+- [ ] What is multithreading?
+- [ ] Thread vs Runnable?
+- [ ] start() vs run()?
+- [ ] What is synchronization?
+- [ ] What is deadlock?
+- [ ] wait() vs sleep()?
+- [ ] What is ExecutorService?
+- [ ] Explain JVM architecture.
+- [ ] Stack vs Heap memory?
+- [ ] What is garbage collection?
+- [ ] What is a memory leak?
+- [ ] What is JIT compilation?
+- [ ] OutOfMemoryError vs StackOverflowError?
+Java coding questions
+- [ ] Reverse a String.
+- [ ] Check palindrome String.
+- [ ] Check anagram Strings.
+- [ ] Find duplicate characters.
+- [ ] Find first non-repeating character.
+- [ ] Count character frequency using HashMap.
+- [ ] Find second-largest array element.
+- [ ] Find missing number in array.
+- [ ] Remove duplicates from an array.
+- [ ] Solve Two Sum.
+- [ ] Sort an array without built-in methods.
+- [ ] Find common elements in two arrays.
+- [ ] Generate Fibonacci series.
+- [ ] Check Armstrong number.
+- [ ] Find even and odd numbers using Streams.
+- [ ] Find duplicate elements using Streams.
+- [ ] Find highest-paid employee using Streams.
+- [ ] Group employees by department.
+- [ ] Sort employees by salary using Comparator.
+
+2. SQL — Complete interview question bank
+High priority
+A. SQL fundamentals
+- [ ] What is SQL?
+- [ ] What is a database?
+- [ ] What is DBMS vs RDBMS?
+- [ ] What are DDL, DML, DQL, DCL and TCL?
+- [ ] Difference between DELETE, DROP and TRUNCATE?
+- [ ] What is a primary key?
+- [ ] What is a foreign key?
+- [ ] Primary key vs unique key?
+- [ ] What are constraints in SQL?
+- [ ] What is NOT NULL?
+- [ ] What is DEFAULT constraint?
+- [ ] What is CHECK constraint?
+- [ ] What is AUTO_INCREMENT?
+- [ ] What is NULL?
+- [ ] Difference between NULL, 0 and empty string?
+- [ ] What is normalization?
+- [ ] Explain 1NF, 2NF and 3NF.
+- [ ] What is denormalization?
+- [ ] What is a composite key?
+- [ ] What is a candidate key?
+B. SQL queries and joins
+- [ ] What is a JOIN?
+- [ ] Explain INNER JOIN.
+- [ ] Explain LEFT JOIN.
+- [ ] Explain RIGHT JOIN.
+- [ ] Explain FULL OUTER JOIN.
+- [ ] What is CROSS JOIN?
+- [ ] What is SELF JOIN?
+- [ ] INNER JOIN vs LEFT JOIN?
+- [ ] UNION vs UNION ALL?
+- [ ] WHERE vs HAVING?
+- [ ] GROUP BY vs ORDER BY?
+- [ ] What is DISTINCT?
+- [ ] What are aggregate functions?
+- [ ] COUNT(*) vs COUNT(column)?
+- [ ] What is a subquery?
+- [ ] What is a correlated subquery?
+- [ ] What is EXISTS?
+- [ ] IN vs EXISTS?
+- [ ] What is a CTE?
+- [ ] CTE vs subquery?
+- [ ] What is a recursive CTE?
+- [ ] What is a window function?
+- [ ] ROW_NUMBER() vs RANK() vs DENSE_RANK()?
+- [ ] What is PARTITION BY?
+- [ ] How do you find the second-highest salary?
+- [ ] How do you find duplicate records?
+- [ ] How do you delete duplicate records?
+- [ ] How do you find employees with the highest salary in each department?
+- [ ] How do you find records present in one table but not another?
+C. Advanced SQL and database concepts
+- [ ] What is an index?
+- [ ] Why do we use indexes?
+- [ ] Clustered vs non-clustered index?
+- [ ] What are the disadvantages of indexes?
+- [ ] What is a composite index?
+- [ ] What is query optimization?
+- [ ] What is an execution plan?
+- [ ] What is a stored procedure?
+- [ ] What is a function?
+- [ ] Stored procedure vs function?
+- [ ] What is a view?
+- [ ] View vs table?
+- [ ] What is a materialized view?
+- [ ] What is a temporary table?
+- [ ] Temporary table vs CTE?
+- [ ] What is a trigger?
+- [ ] What is a cursor?
+- [ ] What is a transaction?
+- [ ] Explain ACID properties.
+- [ ] What is COMMIT?
+- [ ] What is ROLLBACK?
+- [ ] What is SAVEPOINT?
+- [ ] What are transaction isolation levels?
+- [ ] What are dirty reads?
+- [ ] What are non-repeatable reads?
+- [ ] What are phantom reads?
+- [ ] What is database locking?
+- [ ] Shared lock vs exclusive lock?
+- [ ] What is deadlock in SQL?
+- [ ] How do you optimize a slow SQL query?
+D. MySQL and PostgreSQL
+- [ ] What is MySQL?
+- [ ] What is PostgreSQL?
+- [ ] MySQL vs PostgreSQL?
+- [ ] What is AUTO_INCREMENT in MySQL?
+- [ ] What is SERIAL in PostgreSQL?
+- [ ] What is IDENTITY in PostgreSQL?
+- [ ] What is the difference between VARCHAR and TEXT?
+- [ ] What are PostgreSQL schemas?
+- [ ] What is JSONB in PostgreSQL?
+- [ ] What is the difference between LIMIT and OFFSET?
+- [ ] How does indexing work in PostgreSQL?
+- [ ] What is EXPLAIN ANALYZE?
+- [ ] What is the difference between SQL and T-SQL?
+- [ ] What are SQL Server stored procedures?
+- [ ] What is a temporary table in SQL Server?
+- [ ] What is the difference between GETDATE() and CURRENT_TIMESTAMP?
+E. Practical SQL query exercises
+- [ ] Create Employee and Department tables.
+- [ ] Find the second-highest salary.
+- [ ] Find the third-highest salary.
+- [ ] Find the highest salary department-wise.
+- [ ] Find employees who earn more than their managers.
+- [ ] Find employees without a department.
+- [ ] Find duplicate email addresses.
+- [ ] Delete duplicate rows while retaining one.
+- [ ] Find the top three salaries in each department.
+- [ ] Calculate department-wise average salary.
+- [ ] Find employees hired in the last 30 days.
+- [ ] Find consecutive login dates.
+- [ ] Calculate running total using a window function.
+- [ ] Find customers who never placed orders.
+- [ ] Write a stored procedure for employee salary updates.
+
+3. Spring Framework — Interview questions
+A. Spring fundamentals
+- [ ] What is the Spring Framework?
+- [ ] Why do we use Spring?
+- [ ] What is Inversion of Control (IoC)?
+- [ ] What is Dependency Injection (DI)?
+- [ ] IoC vs DI?
+- [ ] What is a Spring Bean?
+- [ ] What is BeanFactory?
+- [ ] What is ApplicationContext?
+- [ ] BeanFactory vs ApplicationContext?
+- [ ] What is the Spring Container?
+- [ ] What is a bean lifecycle?
+- [ ] What are bean scopes?
+- [ ] Singleton vs prototype scope?
+- [ ] What is constructor injection?
+- [ ] What is setter injection?
+- [ ] Constructor injection vs field injection?
+- [ ] What is loose coupling in Spring?
+- [ ] What is dependency inversion?
+B. Spring annotations
+- [ ] What is @Component?
+- [ ] What is @Service?
+- [ ] What is @Repository?
+- [ ] @Component vs @Service vs @Repository?
+- [ ] What is @Autowired?
+- [ ] What is @Qualifier?
+- [ ] What is @Primary?
+- [ ] What is @Bean?
+- [ ] What is @Configuration?
+- [ ] What is @ComponentScan?
+- [ ] What is @Scope?
+- [ ] What is @Lazy?
+- [ ] What is @Value?
+- [ ] What is @PropertySource?
+- [ ] What is @PostConstruct?
+- [ ] What is @PreDestroy?
+C. Spring advanced fundamentals
+- [ ] What is AOP?
+- [ ] What is Aspect?
+- [ ] What is Advice?
+- [ ] What is Pointcut?
+- [ ] What is Join Point?
+- [ ] What is Proxy in Spring?
+- [ ] What is transaction management?
+- [ ] What is @Transactional?
+- [ ] What is transaction propagation?
+- [ ] What is transaction isolation?
+- [ ] What is Spring MVC?
+- [ ] Explain the DispatcherServlet.
+- [ ] What is the Front Controller pattern?
+
+4. Spring Boot — Complete interview question bank
+Your main specialization
+A. Spring Boot fundamentals
+- [ ] What is Spring Boot?
+- [ ] Spring Framework vs Spring Boot?
+- [ ] Why do we use Spring Boot?
+- [ ] What are the features of Spring Boot?
+- [ ] What is auto-configuration?
+- [ ] How does auto-configuration work internally?
+- [ ] What is @SpringBootApplication?
+- [ ] What is the purpose of @EnableAutoConfiguration?
+- [ ] What are Spring Boot starters?
+- [ ] What is spring-boot-starter-parent?
+- [ ] What is Maven?
+- [ ] What is pom.xml?
+- [ ] What is dependency management?
+- [ ] What is an embedded server?
+- [ ] Tomcat vs Jetty?
+- [ ] How do you run a Spring Boot application?
+- [ ] What is CommandLineRunner?
+- [ ] What is ApplicationRunner?
+B. Spring Boot configuration
+- [ ] What is application.properties?
+- [ ] application.properties vs application.yml?
+- [ ] What are Spring Profiles?
+- [ ] How do you configure different environments?
+- [ ] What is @ConfigurationProperties?
+- [ ] @Value vs @ConfigurationProperties?
+- [ ] What is externalized configuration?
+- [ ] How do you configure database connectivity?
+- [ ] What is connection pooling?
+- [ ] What is HikariCP?
+C. REST API and Spring MVC
+- [ ] What is REST architecture?
+- [ ] What is REST API?
+- [ ] What are REST principles?
+- [ ] @Controller vs @RestController?
+- [ ] What is @ResponseBody?
+- [ ] What is @RequestMapping?
+- [ ] @GetMapping vs @PostMapping?
+- [ ] What is @PutMapping?
+- [ ] What is @PatchMapping?
+- [ ] What is @DeleteMapping?
+- [ ] @RequestBody vs @ResponseBody?
+- [ ] @PathVariable vs @RequestParam?
+- [ ] What is ResponseEntity?
+- [ ] What are HTTP methods?
+- [ ] Explain HTTP status codes.
+- [ ] GET vs POST?
+- [ ] PUT vs PATCH?
+- [ ] What is idempotency?
+- [ ] What is content negotiation?
+- [ ] What is DTO?
+- [ ] Why should we use DTOs?
+- [ ] What is request validation?
+- [ ] What is @Valid?
+- [ ] What is @NotNull?
+- [ ] What is @NotBlank?
+- [ ] What is @ControllerAdvice?
+- [ ] What is @ExceptionHandler?
+- [ ] How do you handle global exceptions?
+- [ ] How do you implement pagination and sorting?
+- [ ] How do you test REST APIs using Postman?
+D. Spring Boot practical and scenario questions
+- [ ] Explain the complete architecture of your Spring Boot application.
+- [ ] Explain the Controller → Service → Repository flow.
+- [ ] What happens when a client sends a POST request?
+- [ ] How does Spring inject dependencies?
+- [ ] How does Spring Boot connect to a database?
+- [ ] How do you handle duplicate records?
+- [ ] How do you handle database exceptions?
+- [ ] How do you prevent invalid input?
+- [ ] How do you debug a 404 error?
+- [ ] How do you debug a 500 Internal Server Error?
+- [ ] How do you manage database transactions?
+- [ ] How do you improve API performance?
+- [ ] How do you secure a REST API?
+- [ ] How do you manage sensitive configuration?
+- [ ] How do you log application errors?
+
+5. Spring Data JPA and Hibernate
+This is particularly important because you previously rated yourself as a beginner here.
+A. Hibernate and JPA fundamentals
+- [ ] What is ORM?
+- [ ] What is JPA?
+- [ ] What is Hibernate?
+- [ ] JPA vs Hibernate?
+- [ ] What is Spring Data JPA?
+- [ ] Hibernate vs Spring Data JPA?
+- [ ] What is an Entity?
+- [ ] What is EntityManager?
+- [ ] What is Persistence Context?
+- [ ] What is an entity lifecycle?
+- [ ] What is a Repository?
+- [ ] CrudRepository vs JpaRepository?
+- [ ] What is @Entity?
+- [ ] What is @Table?
+- [ ] What is @Id?
+- [ ] What is @GeneratedValue?
+- [ ] What are GenerationType strategies?
+B. Entity relationships
+- [ ] What is @OneToOne?
+- [ ] What is @OneToMany?
+- [ ] What is @ManyToOne?
+- [ ] What is @ManyToMany?
+- [ ] What is mappedBy?
+- [ ] What is @JoinColumn?
+- [ ] What is cascade?
+- [ ] What is orphanRemoval?
+- [ ] Lazy vs Eager fetching?
+- [ ] What is the N+1 query problem?
+- [ ] How do you solve the N+1 problem?
+- [ ] What is JPQL?
+- [ ] JPQL vs native SQL?
+- [ ] What are derived query methods?
+- [ ] What is @Query?
+- [ ] What is @Modifying?
+- [ ] What is @Transactional?
+- [ ] What is pagination in JPA?
+- [ ] What is sorting in JPA?
